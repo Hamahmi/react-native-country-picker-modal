@@ -1,6 +1,6 @@
 {
   "name": "@hamahmi/react-native-country-picker-modal",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A fork from react-native country picker",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
