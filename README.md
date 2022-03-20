@@ -21,17 +21,17 @@
 ## Installation
 
 ```bash
-$ yarn add react-native-country-picker-modal
+$ yarn add @hamahmi/react-native-country-picker-modal
 ```
 
 ## Basic Usage
 
-For more complete example open [App.tsx](https://github.com/xcarpentier/react-native-country-picker-modal/blob/master/App.tsx)
+For more complete example open [App.tsx](https://github.com/Hamahmi/react-native-country-picker-modal/blob/master/App.tsx)
 
 ```tsx
 import React, { useState } from 'react'
 import { View, Text, StyleSheet, PixelRatio, Switch } from 'react-native'
-import CountryPicker from 'react-native-country-picker-modal'
+import CountryPicker from '@hamahmi/react-native-country-picker-modal'
 import { CountryCode, Country } from './src/types'
 
 const styles = StyleSheet.create({
@@ -106,12 +106,12 @@ export default function App() {
 
 ## Props
 
-- `countryCode`: [CountryCode](https://github.com/xcarpentier/react-native-country-picker-modal/blob/master/src/types.ts#L252)
-- `region?`:[Region](https://github.com/xcarpentier/react-native-country-picker-modal/blob/master/src/types.ts#L272)
-- `subregion?`: [Subregion](https://github.com/xcarpentier/react-native-country-picker-modal/blob/master/src/types.ts#L282)
-- `countryCodes?`: [CountryCode](https://github.com/xcarpentier/react-native-country-picker-modal/blob/master/src/types.ts#L254)
-- `theme?`: [Theme](https://github.com/xcarpentier/react-native-country-picker-modal/blob/7611d34fa35744dbec3fbcdd9b4401494b1ba8c4/src/CountryTheme.ts#L5)
-- `translation?`: [TranslationLanguageCode](https://github.com/xcarpentier/react-native-country-picker-modal/blob/master/src/types.ts#L309)
+- `countryCode`: [CountryCode](https://github.com/Hamahmi/react-native-country-picker-modal/blob/master/src/types.ts#L252)
+- `region?`:[Region](https://github.com/Hamahmi/react-native-country-picker-modal/blob/master/src/types.ts#L272)
+- `subregion?`: [Subregion](https://github.com/Hamahmi/react-native-country-picker-modal/blob/master/src/types.ts#L282)
+- `countryCodes?`: [CountryCode](https://github.com/Hamahmi/react-native-country-picker-modal/blob/master/src/types.ts#L254)
+- `theme?`: [Theme](https://github.com/Hamahmi/react-native-country-picker-modal/blob/7611d34fa35744dbec3fbcdd9b4401494b1ba8c4/src/CountryTheme.ts#L5)
+- `translation?`: [TranslationLanguageCode](https://github.com/Hamahmi/react-native-country-picker-modal/blob/master/src/types.ts#L309)
 - `modalProps?`: [ModalProps](https://facebook.github.io/react-native/docs/modal#props)
 - `filterProps?`: [CountryFilterProps](https://facebook.github.io/react-native/docs/textinput#props)
 - `flatListProps?`: [FlatListProps<Country>](https://facebook.github.io/react-native/docs/flatlist#props)
@@ -129,16 +129,16 @@ export default function App() {
 - `withModal?`: boolean
 - `visible?`: boolean
 - `containerButtonStyle?`: `StyleProp<ViewStyle>`
-- `renderFlagButton?`(props: (FlagButton['props'])): ReactNode ([FlagButton props](https://github.com/xcarpentier/react-native-country-picker-modal/blob/master/src/FlagButton.tsx#L73))
+- `renderFlagButton?`(props: (FlagButton['props'])): ReactNode ([FlagButton props](https://github.com/Hamahmi/react-native-country-picker-modal/blob/master/src/FlagButton.tsx#L73))
 - `renderCountryFilter?`(props: CountryFilter['props']): ReactNode ([CountryFilter props is TextInputProps](https://facebook.github.io/react-native/docs/textinput#props))
-- `onSelect`(country: Country): void ([Country](https://github.com/xcarpentier/react-native-country-picker-modal/blob/master/src/types.ts#L263))
+- `onSelect`(country: Country): void ([Country](https://github.com/Hamahmi/react-native-country-picker-modal/blob/master/src/types.ts#L263))
 - `onOpen`(): void
 - `onClose`(): void
 - `closeButtonImage?`: [ImageSourcePropType](https://facebook.github.io/react-native/docs/image#props)
 - `closeButtonStyle?`: StyleProp<ViewStyle>
 - `closeButtonImageStyle?`: StyleProp<ImageStyle>
 - `disableNativeModal?`: boolean (you have to wrap your all app with CountryModalProvider)
-- `preferredCountries`: [CountryCode](https://github.com/xcarpentier/react-native-country-picker-modal/blob/master/src/types.ts#L254) preferred countries they appear first (`withAlphaFilter` must be false)
+- `preferredCountries`: [CountryCode](https://github.com/Hamahmi/react-native-country-picker-modal/blob/master/src/types.ts#L254) preferred countries they appear first (`withAlphaFilter` must be false)
 
 ## Dark theme example
 
@@ -149,7 +149,7 @@ export default function App() {
 A simple example to display a `CountryPicker` component with a dark theme.
 
 ```tsx
-import CountryPicker, { DARK_THEME } from 'react-native-country-picker-modal'
+import CountryPicker, { DARK_THEME } from '@hamahmi/react-native-country-picker-modal'
 
 const MyDarkView = () => <CountryPicker theme={DARK_THEME} />
 ```
@@ -168,30 +168,13 @@ YES
 
 YES : It used the world-countries package and image is stored into json and base64.
 
-## Tiers lib using this lib
-
-- [react-native-phone-verification](https://github.com/joinspontaneous/react-native-phone-verification)
-
-[> Your project?](https://github.com/xcarpentier/react-native-linkedin/issues/new)
-
-## See also
-
-- [react-native-linkedin](https://github.com/xcarpentier/react-native-linkedin)
-
 ## Contribution
 
 - [@xcapentier](mailto:contact@xaviercarpentier.com) The main author.
-
-## Questions
-
-Feel free to [contact me](mailto:contact@xaviercarpentier.com) or [create an issue](https://github.com/xcarpentier/react-native-country-picker/issues/new)
+- [@Hamahmi](mailto:Hamahmi@yahoo.com).
 
 > made with ♥
 
 ## Licence
 
-[MIT](https://github.com/xcarpentier/react-native-country-picker-modal/blob/master/LICENSE.md)
-
-## Hire an expert!
-
-Looking for a ReactNative freelance expert with more than 12 years experience? Contact me from my [website](https://xaviercarpentier.com)!
+[MIT](https://github.com/Hamahmi/react-native-country-picker-modal/blob/master/LICENSE.md)

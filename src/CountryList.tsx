@@ -41,9 +41,9 @@ const styles = StyleSheet.create({
   },
   itemCountry: {
     flexDirection: 'row',
-    justifyContent: 'flex-start',
+    justifyContent: 'center',
     alignItems: 'center',
-    paddingHorizontal: 5,
+    paddingHorizontal: 15,
   },
   itemCountryName: {
     width: '90%',
